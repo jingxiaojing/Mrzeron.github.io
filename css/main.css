@@ -188,7 +188,7 @@ body {
   font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
-  color: #555;
+  color: $text-color;
   background: #fff;
 }
 @media (max-width: 767px) {
@@ -742,13 +742,13 @@ pre .javascript .function {
 .post-more-link .btn:hover {
   border-color: #222;
   color: #222;
-  background: #fff;
+  background: #eee;
 }
 .btn-bar {
   display: block;
   width: 22px;
   height: 2px;
-  background: #555;
+  background: $text-color;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1520,7 +1520,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5771ff;
+  background: #ffff32;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2399,7 +2399,4 @@ hr {
     width: auto;
     text-align: center;
   }
-}
-body {
-  background: url("http://ocq2u27lk.bkt.clouddn.com/bg.png") no-repeat center;
 }
