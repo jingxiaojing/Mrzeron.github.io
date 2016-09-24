@@ -59,25 +59,22 @@
 
 
 
-<meta name="description" content="###seo优化
-###jqueryui
-###jqueryeasyui
-###cms">
+<meta name="description" content="WebSQL
+它就是一个数据库
+创建数据库  openDatabase 我们可以使用这样简单的一条语句，创建或打开一个本地的数据库对象">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有你的小时光">
-<meta property="og:url" content="http://yoursite.com/2016/09/14/课前/index.html">
+<meta property="og:title" content="webSQL">
+<meta property="og:url" content="http://yoursite.com/2016/09/24/webSQL/index.html">
 <meta property="og:site_name" content="有你的小时光">
-<meta property="og:description" content="###seo优化
-###jqueryui
-###jqueryeasyui
-###cms">
-<meta property="og:updated_time" content="2016-09-14T00:27:00.794Z">
+<meta property="og:description" content="WebSQL
+它就是一个数据库
+创建数据库  openDatabase 我们可以使用这样简单的一条语句，创建或打开一个本地的数据库对象">
+<meta property="og:updated_time" content="2016-09-24T07:13:49.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有你的小时光">
-<meta name="twitter:description" content="###seo优化
-###jqueryui
-###jqueryeasyui
-###cms">
+<meta name="twitter:title" content="webSQL">
+<meta name="twitter:description" content="WebSQL
+它就是一个数据库
+创建数据库  openDatabase 我们可以使用这样简单的一条语句，创建或打开一个本地的数据库对象">
 
 
 
@@ -95,7 +92,7 @@
   };
 </script>
 
-  <title>  | 有你的小时光 </title>
+  <title> webSQL | 有你的小时光 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -400,7 +397,7 @@
             
             
               
-                
+                webSQL
               
             
           </h1>
@@ -412,19 +409,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-14T08:27:00+08:00" content="2016-09-14">
-              2016-09-14
+            <time itemprop="dateCreated" datetime="2016-09-24T15:08:20+08:00" content="2016-09-24">
+              2016-09-24
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/HTML5存储/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML5存储</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/14/课前/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/14/课前/" itemprop="commentsCount"></span>
+                <a href="/2016/09/24/webSQL/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/24/webSQL/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -434,7 +450,7 @@
 
           
           
-             <span id="/2016/09/14/课前/" class="leancloud_visitors" data-flag-title="">
+             <span id="/2016/09/24/webSQL/" class="leancloud_visitors" data-flag-title="webSQL">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -455,11 +471,33 @@
       
 
       
-        <p>###seo优化</p>
-<p>###jqueryui</p>
-<p>###jqueryeasyui</p>
-<p>###cms</p>
-
+        <h1 id="WebSQL"><a href="#WebSQL" class="headerlink" title="WebSQL"></a>WebSQL</h1><hr>
+<p></p><h4 style="text-align:center">它就是一个数据库</h4><p></p>
+<p></p><p style="text-indent:2em;text-align:center">创建数据库  <span style="color:green">openDatabase <span><p style="text-align:center">我们可以使用这样简单的一条语句，创建或打开一个本地的数据库对象</p></span></span></p>
+<p></p><p><br><a id="more"></a></p>
+<p></p><h6 style="text-align:center">它包含五个参数<h6><p></p>
+<ol>
+<li>数据库名字</li>
+<li>数据库版本号</li>
+<li>显示名字</li>
+<li>数据库大小单位为字节</li>
+<li>回调函数</li>
+</ol>
+<p></p><h4 style="text-align:center">transaction </h4><p></p>
+<blockquote>
+<p>方法用以处理事务，当一条语句执行失败的时候，整个事务回滚。方法有三个参数<br>    包含事务内容的一个方法<br>    执行成功回调函数（可选）<br>    执行失败回调函数（可选）</p>
+</blockquote>
+<pre><code>tx.executeSql(&apos;create table if not exists logs(id unique,log)&apos;);创建
+    tx.executeSql(&apos;insert into logs(id,log) values(1,&quot;你好&quot;)&apos;);插入
+    tx.executeSql(&apos;select * from logs&apos;,[],function(tx,res){
+        res.rows.length;
+        res.rows.item(i).id  res.rows.item(i).log res.rows.item(i) 是整条字段  遍历
+        document.querySelector(&quot;#&quot;)  
+    },function(){})1.sql语句体 2.[]3.成功回调4.失败回调 
+})
+delete from log where id=2 删除
+update logs set log=&quot;123&quot; where id=1; 更新
+</code></pre></h6></h6>
       
     </div>
 
@@ -492,16 +530,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/12/前端工程化/" rel="next" title="前端工程化">
-                <i class="fa fa-chevron-left"></i> 前端工程化
+              <a href="/2016/09/24/webStorage/" rel="next" title="webStorage">
+                <i class="fa fa-chevron-left"></i> webStorage
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/09/16/来自知乎/" rel="prev" title="来自知乎">
-                来自知乎 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/09/24/appcache/" rel="prev" title="appcache">
+                appcache <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -517,10 +555,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/09/14/课前/"
-     data-title=""
+        <div class="ds-share flat" data-thread-key="2016/09/24/webSQL/"
+     data-title="webSQL"
      data-content=""
-     data-url="http://yoursite.com/2016/09/14/课前/">
+     data-url="http://yoursite.com/2016/09/24/webSQL/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -543,12 +581,15 @@
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/14/课前/"
-           data-title="" data-url="http://yoursite.com/2016/09/14/课前/">
+      <div class="ds-thread" data-thread-key="2016/09/24/webSQL/"
+           data-title="webSQL" data-url="http://yoursite.com/2016/09/24/webSQL/">
       </div>
     
   </div>
@@ -593,7 +634,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -601,7 +642,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -610,7 +651,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -681,7 +722,51 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#WebSQL"><span class="nav-number">1.</span> <span class="nav-text">WebSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">它就是一个数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.1.0.1.</span> <span class="nav-text">它包含五个参数
+
+数据库名字
+数据库版本号
+显示名字
+数据库大小单位为字节
+回调函数
+
+transaction 
+
+方法用以处理事务，当一条语句执行失败的时候，整个事务回滚。方法有三个参数    包含事务内容的一个方法    执行成功回调函数（可选）    执行失败回调函数（可选）
+
+tx.executeSql('create table if not exists logs(id unique,log)');创建
+    tx.executeSql('insert into logs(id,log) values(1,"你好")');插入
+    tx.executeSql('select * from logs',[],function(tx,res){
+        res.rows.length;
+        res.rows.item(i).id  res.rows.item(i).log res.rows.item(i) 是整条字段  遍历
+        document.querySelector("#")  
+    },function(){})1.sql语句体 2.[]3.成功回调4.失败回调 
+})
+delete from log where id=2 删除
+update logs set log="123" where id=1; 更新
+</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.1.0.2.</span> <span class="nav-text">
+
+数据库名字
+数据库版本号
+显示名字
+数据库大小单位为字节
+回调函数
+
+transaction 
+
+方法用以处理事务，当一条语句执行失败的时候，整个事务回滚。方法有三个参数    包含事务内容的一个方法    执行成功回调函数（可选）    执行失败回调函数（可选）
+
+tx.executeSql('create table if not exists logs(id unique,log)');创建
+    tx.executeSql('insert into logs(id,log) values(1,"你好")');插入
+    tx.executeSql('select * from logs',[],function(tx,res){
+        res.rows.length;
+        res.rows.item(i).id  res.rows.item(i).log res.rows.item(i) 是整条字段  遍历
+        document.querySelector("#")  
+    },function(){})1.sql语句体 2.[]3.成功回调4.失败回调 
+})
+delete from log where id=2 删除
+update logs set log="123" where id=1; 更新
+</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">transaction </span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
