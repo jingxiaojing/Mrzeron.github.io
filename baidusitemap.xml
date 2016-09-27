@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/09/24/css3%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2016-09-27T03:02:54.607Z</lastmod>
+    <data>
+        <display>
+        <title>css3基础</title>
+        <pubTime>2016-09-24T03:18:43.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="CSS3基础" url="http://yoursite.com/categories/CSS3%E5%9F%BA%E7%A1%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/09/24/appcache/</loc>
     <lastmod>2016-09-24T09:57:50.176Z</lastmod>
     <data>
@@ -51,24 +69,6 @@
            
              
               <breadCrumb title="HTML5存储" url="http://yoursite.com/categories/HTML5%E5%AD%98%E5%82%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/09/24/css3%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2016-09-24T06:26:23.968Z</lastmod>
-    <data>
-        <display>
-        <title>css3基础</title>
-        <pubTime>2016-09-24T03:18:43.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="CSS3基础" url="http://yoursite.com/categories/CSS3%E5%9F%BA%E7%A1%80/"/>
           
         </display>
     </data>
